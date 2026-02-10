@@ -3,6 +3,7 @@ import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
 import { Noto_Sans_Devanagari } from "next/font/google";
 import Navbar from './components/Navbar'
+import AuthProvider from '@/components/providers/AuthProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 const poppins = Poppins({ 
@@ -24,8 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${poppins.variable} antialiased`}>
-        <Navbar />
-        {children}
+        <AuthProvider>
+          <Navbar />
+          {children}
         
         {/* Footer */}
         <footer className="bg-gradient-to-br from-gray-900 via-red-950 to-gray-900 text-white py-16 mt-20">
@@ -70,6 +72,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        </AuthProvider>
       </body>
     </html>
   )

@@ -5,23 +5,6 @@ self.__BUILD_MANIFEST = {
     "fallback": []
   },
   "sortedPages": [
-    "/ClientDashboard",
-    "/Dashboard",
-    "/EditProjectPage",
-    "/FreelancerDashboard",
-    "/FreelancersPage",
-    "/HomePage",
-    "/LandingPage",
-    "/LoginPage",
-    "/LoginPortalSelectorPage",
-    "/ManageProjectsPage",
-    "/PostProjectPage",
-    "/ProfilePage",
-    "/ProjectDetailsPage",
-    "/ProjectsPage",
-    "/SearchResultsPage",
-    "/SignupPage",
-    "/SplashScreen",
     "/_app",
     "/_error"
   ]

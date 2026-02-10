@@ -1,3 +1,5 @@
 {
-  "/api/freelancers/route": "app/api/freelancers/route.js"
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js"
 }

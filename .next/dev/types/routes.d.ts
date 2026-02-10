@@ -3,7 +3,7 @@
 
 type AppRoutes = "/" | "/dashboard" | "/freelancers" | "/freelancers/[id]" | "/login" | "/my-projects" | "/profile" | "/profile/create" | "/profile/edit" | "/projects" | "/projects/[id]" | "/projects/new" | "/signup"
 type AppRouteHandlerRoutes = "/api/auth/[...nextauth]" | "/api/auth/register" | "/api/freelancers" | "/api/freelancers/[id]" | "/api/freelancers/me" | "/api/projects" | "/api/projects/[id]"
-type PageRoutes = "/ClientDashboard" | "/Dashboard" | "/EditProjectPage" | "/FreelancerDashboard" | "/FreelancersPage" | "/HomePage" | "/LandingPage" | "/LoginPage" | "/LoginPortalSelectorPage" | "/ManageProjectsPage" | "/PostProjectPage" | "/ProfilePage" | "/ProjectDetailsPage" | "/ProjectsPage" | "/SearchResultsPage" | "/SignupPage" | "/SplashScreen"
+type PageRoutes = never
 type LayoutRoutes = "/"
 type RedirectRoutes = never
 type RewriteRoutes = never
@@ -19,35 +19,18 @@ interface ParamMap {
   "/api/freelancers/me": {}
   "/api/projects": {}
   "/api/projects/[id]": { "id": string; }
-  "/ClientDashboard": {}
   "/dashboard": {}
-  "/Dashboard": {}
-  "/EditProjectPage": {}
-  "/FreelancerDashboard": {}
   "/freelancers": {}
   "/freelancers/[id]": { "id": string; }
-  "/FreelancersPage": {}
-  "/HomePage": {}
-  "/LandingPage": {}
   "/login": {}
-  "/LoginPage": {}
-  "/LoginPortalSelectorPage": {}
-  "/ManageProjectsPage": {}
   "/my-projects": {}
-  "/PostProjectPage": {}
   "/profile": {}
   "/profile/create": {}
   "/profile/edit": {}
-  "/ProfilePage": {}
-  "/ProjectDetailsPage": {}
   "/projects": {}
   "/projects/[id]": { "id": string; }
   "/projects/new": {}
-  "/ProjectsPage": {}
-  "/SearchResultsPage": {}
   "/signup": {}
-  "/SignupPage": {}
-  "/SplashScreen": {}
 }
 
 
